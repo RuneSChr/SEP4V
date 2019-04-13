@@ -23,7 +23,6 @@ public class InputFieldTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("a");
         passwordEnter.SetActive(true);
     }
 }

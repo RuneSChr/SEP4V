@@ -10,14 +10,6 @@ public class OpenTips : MonoBehaviour
 	void Start () {
 	}
 
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            tip.SetActive(false);
-        }
-    }
-
     void OnTriggerEnter(Collider other)
     {
         tip.SetActive(true);
