@@ -24,5 +24,7 @@ public class InputFieldTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         passwordEnter.SetActive(true);
+        
+
     }
 }
