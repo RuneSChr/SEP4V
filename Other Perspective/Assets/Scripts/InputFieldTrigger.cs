@@ -1,3 +1,4 @@
+
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,5 +25,8 @@ public class InputFieldTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         passwordEnter.SetActive(true);
+        
+
     }
 }
+
