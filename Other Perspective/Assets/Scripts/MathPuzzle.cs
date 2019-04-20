@@ -33,8 +33,7 @@ public class MathPuzzle : MonoBehaviour {
 
     void HandleButtonPress()
     {
-        BtnCheckAnswer.GetComponent<Button>().onClick.AddListener(HandleAnswer);
-        
+        BtnCheckAnswer.GetComponent<Button>().onClick.AddListener(HandleAnswer);        
     }
 
     void HandleAnswer()
