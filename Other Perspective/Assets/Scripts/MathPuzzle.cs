@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using Wilberforce;
 
 public class MathPuzzle : MonoBehaviour {
 
@@ -12,18 +14,23 @@ public class MathPuzzle : MonoBehaviour {
     public InputField RiddleAnswer;
     public Button BtnCheckAnswer;
     public GameObject pivotPoint;
+    public Colorblind ColorBlindScript;
 
    
 
     private void Awake()
     {
+        ColorBlindScript = GetComponent<Colorblind>();
         //if more puzzles instantiate 
         _NumberOfTries = 0;
         _RightAnswer = 125;
     }
     // Use this for initialization
     void Start () {
-        
+
+        //var colorblindScript = ColorBlindScript as Colorblind;
+        ColorBlindScript.Type = 2;
+
     }
 	
 	// Update is called once per frame
