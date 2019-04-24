@@ -62,10 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Colorblind Effect\Assets\Scripts\Colorblind.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
-=======
->>>>>>> parent of f2b0d05... Merge branch 'master' of https://github.com/RuneSChr/SEP4V
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -391,6 +387,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\ColorBlindHandler.cs" />
     <Compile Include="Assets\Scripts\IColorBlind.cs" />
     <Compile Include="Assets\Scripts\InputFieldTrigger.cs" />
     <Compile Include="Assets\Scripts\MathPuzzle.cs" />
@@ -398,11 +395,8 @@
     <Compile Include="Assets\Scripts\OpenTips.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Shaking.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Scripts\Trigger1.cs" />
     <Compile Include="Assets\Scripts\Trigger2.cs" />
->>>>>>> parent of f2b0d05... Merge branch 'master' of https://github.com/RuneSChr/SEP4V
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
