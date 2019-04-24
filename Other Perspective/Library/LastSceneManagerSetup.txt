@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ColorblindnessTest.unity
+- path: Assets/Scenes/Shape Recognition Scene.unity
   isLoaded: 1
   isActive: 1
