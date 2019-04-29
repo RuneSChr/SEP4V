@@ -87,6 +87,7 @@
     <Compile Include="Assets\Oculus\VR\Scripts\OVRProfile.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\OVRTracker.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRChromaticAberration.cs" />
+    <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRControllerHelper.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRCubemapCapture.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRCursor.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRDebugInfo.cs" />
@@ -111,7 +112,6 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRSceneSampleController.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRScreenFade.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRSystemPerfMetrics.cs" />
-    <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRTrackedRemote.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRWaitCursor.cs" />
     <Compile Include="Assets\Oculus\VR\ThirdParty\openvr_api.cs" />
     <Compile Include="Assets\Oculus\VR\ThirdParty\SimpleJSON.cs" />
@@ -389,6 +389,9 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/siwu9/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="InteractionEngineUtility">
+      <HintPath>D:/软件/Unity Build Game/Other Perspective/Assets/LeapMotion/Modules/InteractionEngine/Plugins/InteractionEngineUtility.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/软件/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
