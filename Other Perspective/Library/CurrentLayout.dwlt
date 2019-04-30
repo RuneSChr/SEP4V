@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 57
+  controlID: 75
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 98
+  controlID: 121
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 99
+  controlID: 122
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -369,9 +369,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c45a0000
-    m_LastClickedID: 23236
-    m_ExpandedIDs: 60c1ffffe4fbffff00000000a45a0000
+    m_SelectedIDs: 78440000
+    m_LastClickedID: 0
+    m_ExpandedIDs: b2d9ffff1eddffffe4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -466,7 +466,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/LeapMotion/Core/Prefabs
+    - Assets/Scenes
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -478,7 +478,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 802b0000
     m_LastClickedID: 11136
-    m_ExpandedIDs: 00000000863300000c340000dc340000e635000078360000f43b0000823c0000543f0000564200005a43000086440000124900000c5100000e510000
+    m_ExpandedIDs: 00000000863300000c340000dc340000e635000078360000f43b0000823c0000543f0000564200005a43000086440000124900006c5100006e510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,10 +503,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 120}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000863300000c340000dc340000e635000078360000f43b0000823c0000543f0000564200005a43000086440000124900000c5100000e510000
+    m_ExpandedIDs: ffffffff00000000863300000c340000dc34000078360000ca390000f43b0000823c0000543f0000564200005a43000086440000124900006c5100006e510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -671,9 +671,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -8.765499, y: -0.8829581, z: 19.112772}
+    m_Target: {x: -32.62059, y: 7.942892, z: 2.265192}
     speed: 2
-    m_Value: {x: -8.765499, y: -0.8829581, z: 19.112772}
+    m_Value: {x: -32.62059, y: 7.942892, z: 2.265192}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -701,13 +701,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.10747872, y: 0.106266454, z: -0.01155496, w: -0.9884443}
+    m_Target: {x: -0.0707334, y: -0.6666448, z: -0.06378502, w: 0.7392652}
     speed: 2
-    m_Value: {x: -0.107478715, y: 0.106266454, z: -0.011554959, w: -0.98844427}
+    m_Value: {x: -0.0707334, y: -0.6666448, z: -0.06378502, w: 0.7392652}
   m_Size:
-    m_Target: 22
+    m_Target: 30.472536
     speed: 2
-    m_Value: 22
+    m_Value: 30.472536
   m_Ortho:
     m_Target: 0
     speed: 2

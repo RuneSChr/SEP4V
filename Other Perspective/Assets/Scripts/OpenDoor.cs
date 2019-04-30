@@ -11,49 +11,54 @@ public class OpenDoor : MonoBehaviour
     public GameObject door;
     public GameObject inputField;
     private bool openDoor = false;
-    public Button btn1;
-    public Button btn2;
-    public Button btn3;
-    public Button btn4;
-    public Button btn5;
-    public Button btn6;
-    public Button btn7;
-    public Button btn8;
-    public Button btn9;
-    public Button btn0;
-    public Button del;
-    public Button delAll;
+    private bool onCoolDown;
+    //public Button btn1;
+    //public Button btn2;
+    //public Button btn3;
+    //public Button btn4;
+    //public Button btn5;
+    //public Button btn6;
+    //public Button btn7;
+    //public Button btn8;
+    //public Button btn9;
+    //public Button btn0;
+    //public Button del;
+    //public Button delAll;
 
     // Use this for initialization
     void Start()
     {
-        input = gameObject.GetComponent<InputField>();
+        //input = gameObject.GetComponent<InputField>();
+
+        input = inputField.GetComponent<InputField>();
 
         input.text = "";
 
-        btn1.onClick.AddListener(delegate { ButtonInput("1"); });
+        onCoolDown = false;
 
-        btn2.onClick.AddListener(delegate{ButtonInput("2");});
+        //btn1.onClick.AddListener(delegate { ButtonInput("1"); });
 
-        btn3.onClick.AddListener(delegate{ButtonInput("3");});
+        //btn2.onClick.AddListener(delegate{ButtonInput("2");});
 
-        btn4.onClick.AddListener(delegate { ButtonInput("4"); });
+        //btn3.onClick.AddListener(delegate{ButtonInput("3");});
 
-        btn5.onClick.AddListener(delegate { ButtonInput("5"); });
+        //btn4.onClick.AddListener(delegate { ButtonInput("4"); });
 
-        btn6.onClick.AddListener(delegate { ButtonInput("6"); });
+        //btn5.onClick.AddListener(delegate { ButtonInput("5"); });
 
-        btn7.onClick.AddListener(delegate { ButtonInput("7"); });
+        //btn6.onClick.AddListener(delegate { ButtonInput("6"); });
 
-        btn8.onClick.AddListener(delegate { ButtonInput("8"); });
+        //btn7.onClick.AddListener(delegate { ButtonInput("7"); });
 
-        btn9.onClick.AddListener(delegate { ButtonInput("9"); });
+        //btn8.onClick.AddListener(delegate { ButtonInput("8"); });
 
-        btn0.onClick.AddListener(delegate{ButtonInput("0");});
+        //btn9.onClick.AddListener(delegate { ButtonInput("9"); });
 
-        delAll.onClick.AddListener(DeleteAll);
+        //btn0.onClick.AddListener(delegate{ButtonInput("0");});
 
-        del.onClick.AddListener(DeleteNumber);
+        //delAll.onClick.AddListener(DeleteAll);
+
+        //del.onClick.AddListener(DeleteNumber);
         //      inputField = gameObject.GetComponent<GameObject>();
     }
 
@@ -63,13 +68,27 @@ public class OpenDoor : MonoBehaviour
         if (input.text == "12321")
         {
             door.transform.localPosition -= new Vector3(-4,0, 0);
-            inputField.SetActive(false);
+            //inputField.SetActive(false);
         }
     }
 
-    void ButtonInput(string number)
+    public void ButtonInput(string number)
     {
-        input.text += number;
+        if (onCoolDown) return;
+        onCoolDown = true;
+        if (number == "10")
+        {
+            DeleteNumber();
+        }
+        else if (number == "11")
+        {
+            DeleteAll();
+        }
+        else
+        {
+            input.text += number;
+        }
+        StartCoroutine(CoolDown());
     }
 
     void DeleteNumber()
@@ -88,6 +107,11 @@ public class OpenDoor : MonoBehaviour
         }
     }
 
+    IEnumerator CoolDown()
+    {
+        yield return new WaitForSeconds(1);
+        onCoolDown = false;
+    }
     
 
    

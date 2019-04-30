@@ -7,24 +7,46 @@ using Leap.Unity.Interaction;
 
 public class OpenTips : MonoBehaviour
 {
-    public GameObject tip;
-    private InteractionBehaviour behave;
+    private Material _material;
 
-	// Use this for initialization
-	void Start () {
-        behave = GetComponent<InteractionBehaviour>();
-        behave.OnGraspBegin += Test;
+    private InteractionBehaviour _intObj;
+
+    public GameObject tip;
+
+    // Use this for initialization
+    void Start () {
+        _intObj = GetComponent<InteractionBehaviour>();
+
+        _intObj.OnHoverBegin += Test;
+
+        Renderer renderer = GetComponent<Renderer>();
+        if (renderer == null)
+        {
+            renderer = GetComponentInChildren<Renderer>();
+        }
+        if (renderer != null)
+        {
+            _material = renderer.material;
+        }
+    }
+
+    private void Update()
+    {
+        if (_intObj is InteractionButton && (_intObj as InteractionButton).isPressed)
+        {
+            tip.SetActive(false);
+        }
     }
 
     void Test()
     {
-        tip.SetActive(true);
+        tip.SetActive(false);
     }
 
-    private void OnDestroy()
+ /*   private void OnDestroy()
     {
         behave.OnGraspBegin -= Test;
-    }
+    }*/
 }
 
 
