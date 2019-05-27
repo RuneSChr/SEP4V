@@ -701,6 +701,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\InputFieldTrigger.cs" />
+    <Compile Include="Assets\Scripts\KeyholeTrigger.cs" />
     <Compile Include="Assets\Scripts\MathPuzzle.cs" />
     <Compile Include="Assets\Scripts\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\OpenTips.cs" />
