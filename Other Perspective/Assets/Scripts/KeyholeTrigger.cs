@@ -16,6 +16,7 @@ public class KeyholeTrigger : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        if(other.CompareTag("key"))
         Debug.Log("Trigger enter");
 
         //related function for starting next puzzle

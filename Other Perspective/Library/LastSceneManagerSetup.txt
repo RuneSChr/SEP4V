@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Keyhole Puzzle.unity
+- path: Assets/Scenes/Reading Test Puzzle.unity
   isLoaded: 1
   isActive: 1
