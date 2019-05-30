@@ -1878,7 +1878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b44411e967c02d41b5dbb8565f4d343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shades: {fileID: 0}
   ShaderIndex: 1
 --- !u!65 &250896531
 BoxCollider:
@@ -3881,7 +3880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b44411e967c02d41b5dbb8565f4d343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shades: {fileID: 0}
   ShaderIndex: 2
 --- !u!65 &602408507
 BoxCollider:
@@ -4608,6 +4606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 751631878}
   - component: {fileID: 751631877}
+  - component: {fileID: 751631879}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4640,6 +4639,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &751631879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751631876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8e1d778abf442e4bec449c360e9e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 4
+  fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
+  fadeOnStart: 0
+  renderQueue: 5000
 --- !u!1 &763075743
 GameObject:
   m_ObjectHideFlags: 0
@@ -5573,7 +5587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b44411e967c02d41b5dbb8565f4d343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shades: {fileID: 0}
   ShaderIndex: 3
 --- !u!54 &876558010
 Rigidbody:
@@ -10128,13 +10141,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1739800799}
-  m_LocalRotation: {x: -0.70709825, y: 0.0035177206, z: 0.003517794, w: -0.7070979}
-  m_LocalPosition: {x: 5.369, y: 0.5600004, z: -8.26}
+  m_LocalRotation: {x: 0.001526875, y: -0.70710516, z: 0.7071051, w: -0.0015268755}
+  m_LocalPosition: {x: -0.2840004, y: -1.2189999, z: 2.8579998}
   m_LocalScale: {x: 0.10000008, y: 0.10000005, z: 0.10000005}
   m_Children: []
   m_Father: {fileID: 770614061}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 89.43001, y: -90.003006, z: 269.997}
+  m_LocalEulerAnglesHint: {x: -270.247, y: 90.00101, z: -89.998}
 --- !u!64 &1739800801
 MeshCollider:
   m_ObjectHideFlags: 0

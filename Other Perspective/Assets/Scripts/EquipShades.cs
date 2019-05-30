@@ -8,6 +8,8 @@ public class EquipShades : MonoBehaviour {
     [SerializeField]
     private int ShaderIndex;
 
+
+
     // Use this for initialization
     void Start () {
         Handler = GameObject.Find("GameManager").GetComponent<ColorBlindHandler>();
@@ -22,9 +24,10 @@ public class EquipShades : MonoBehaviour {
     {
         if(other.gameObject.name == "Face")
         {
+            GameObject.Find("GameManager").GetComponent<OVRScreenFade>().FadeOut();
             Handler.ChangeSpectrum(ShaderIndex);
             gameObject.SetActive(false);
-            StartCoroutine(FadeToNextShader());
+            
         }
         
     }
