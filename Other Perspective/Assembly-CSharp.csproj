@@ -391,6 +391,7 @@
     <Compile Include="Assets\Scripts\IColorBlind.cs" />
     <Compile Include="Assets\Scripts\InputFieldTrigger.cs" />
     <Compile Include="Assets\Scripts\MathPuzzle.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\OpenTips.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />

@@ -9,11 +9,21 @@ public class ColorBlindHandler : MonoBehaviour {
     [SerializeField]
     private Colorblind ColorBlindScript;
 
+
+  
+
     void Start()
     {
         //GetComponent<IColorBlind>().OnShadesChanged += HandleSpectrumChange;
-        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-        ColorBlindScript = cam.GetComponent<Colorblind>();
+        //GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+
+    }
+
+    private void Update()
+    {
+        //ColorBlindScript = GetComponent<Colorblind>();
+        //print(ColorBlindScript);
+        
     }
     void Awake()
     {
@@ -22,8 +32,12 @@ public class ColorBlindHandler : MonoBehaviour {
 
     public void HandleSpectrumChange(int shadeIndex)
     {
+
         ColorBlindScript.Type = shadeIndex;
+        
     }
+
+    
 
   
 }
