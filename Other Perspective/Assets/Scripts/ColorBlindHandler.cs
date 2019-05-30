@@ -8,9 +8,13 @@ public class ColorBlindHandler : MonoBehaviour {
 
     [SerializeField]
     private Colorblind ColorBlindScript;
+    //[SerializeField]
+    
 
+    void Awake()
+    {      
 
-  
+    }
 
     void Start()
     {
@@ -19,25 +23,23 @@ public class ColorBlindHandler : MonoBehaviour {
 
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+       
         //ColorBlindScript = GetComponent<Colorblind>();
         //print(ColorBlindScript);
         
     }
-    void Awake()
-    {
-        
-    }
+   
 
-    public void HandleSpectrumChange(int shadeIndex)
+    public void ChangeSpectrum(int shadeIndex)
     {
 
         ColorBlindScript.Type = shadeIndex;
         
     }
 
-    
+   
 
-  
+
 }
