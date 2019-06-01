@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReadingTestWinTrigger : MonoBehaviour {
+public class ReadingTestWinTrigger : MonoBehaviour
+{
+    public GameObject[] currentDoorsAndPassage;
+    public Animator[] anim;
 
 	// Use this for initialization
 	void Start () {
@@ -16,8 +19,18 @@ public class ReadingTestWinTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("MainCamera"))
-        //go to next puzzle
-        Debug.Log("Win trigger enter!");
+        if (other.CompareTag("MainCamera"))
+        {
+            foreach (var VARIABLE in currentDoorsAndPassage)
+            {
+                VARIABLE.SetActive(false);
+            }
+
+            foreach (var VARIABLE in anim)
+            {
+                VARIABLE.SetBool("startMove",true);
+            }
+        }
+        
     }
 }

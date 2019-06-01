@@ -15,7 +15,6 @@ public class ReadingTestWrongTrigger : MonoBehaviour
     public Rigidbody player;
 
 
-
 	// Use this for initialization
 	void Start () {
 		
@@ -44,10 +43,9 @@ public class ReadingTestWrongTrigger : MonoBehaviour
 
     IEnumerator TriggerEvent()
     {
+
         source.PlayOneShot(clip);
         yield return new WaitForSeconds(2f);
-
-        CameraForce.forceBack = true;
 
         currentPassage.SetActive(false);
         nextPassage.SetActive(true);
