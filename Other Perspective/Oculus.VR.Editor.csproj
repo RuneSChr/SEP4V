@@ -326,9 +326,6 @@
     <Reference Include="JMOAssets_CartoonFXFreeWelcome">
       <HintPath>D:/软件/Unity Build Game/Other Perspective/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
     </Reference>
-    <Reference Include="InteractionEngineUtility">
-      <HintPath>D:/软件/Unity Build Game/Other Perspective/Assets/LeapMotion/Modules/InteractionEngine/Plugins/InteractionEngineUtility.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/siwu9/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>

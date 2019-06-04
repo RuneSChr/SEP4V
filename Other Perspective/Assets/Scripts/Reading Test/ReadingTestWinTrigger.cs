@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ReadingTestWinTrigger : MonoBehaviour
 {
     public GameObject[] currentDoorsAndPassage;
     public Animator[] anim;
+    public GameObject laserRule;
 
 	// Use this for initialization
 	void Start () {
@@ -21,15 +23,7 @@ public class ReadingTestWinTrigger : MonoBehaviour
     {
         if (other.CompareTag("MainCamera"))
         {
-            foreach (var VARIABLE in currentDoorsAndPassage)
-            {
-                VARIABLE.SetActive(false);
-            }
-
-            foreach (var VARIABLE in anim)
-            {
-                VARIABLE.SetBool("startMove",true);
-            }
+           SceneManager.LoadScene("Go between Laser Puzzle");
         }
         
     }
