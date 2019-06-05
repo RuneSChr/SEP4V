@@ -6,7 +6,7 @@ public class EquipShades : MonoBehaviour {
     
     private ColorBlindHandler Handler;
     [SerializeField]
-    private int ShaderIndex;
+    private readonly int ShaderIndex;
 
 
 
@@ -26,7 +26,7 @@ public class EquipShades : MonoBehaviour {
         {
             GameObject.Find("GameManager").GetComponent<OVRScreenFade>().FadeOut();
             Handler.ChangeSpectrum(ShaderIndex);
-            gameObject.SetActive(false);
+            gameObject.SetActive(true);
             
         }
         
