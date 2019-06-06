@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HammerTime : MonoBehaviour {
+public class SilentButDeadly : MonoBehaviour {
 
     public Animator hammerAnim;
     

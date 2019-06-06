@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour {
 
-    private Transform playerTransform;
+    public Transform playerTransform;
     private Vector3 offset;
     [SerializeField]
-    private float x, y, z;
+    private float xOffset, yOffset, zOffset;
 	// Use this for initialization
 	void Awake () {
-        x = 0;
-        y = 0;
-        z = 0;
-        playerTransform = GameObject.Find("Player/NoSteamVRFallbackObjects").transform; /*GameObject.Find("Player /SteamVRObjects/VRCamera").transform;*/
-        offset = new Vector3(x, y, z);
+        //playerTransform = GameObject.Find("Player/NoSteamVRFallbackObjects").transform; /*GameObject.Find("Player /SteamVRObjects/VRCamera").transform;*/
+        offset = new Vector3(xOffset, yOffset, zOffset);
         
 	}
 	
@@ -22,7 +19,6 @@ public class FollowPlayer : MonoBehaviour {
 	void Update () {
 
         gameObject.transform.position = playerTransform.position + offset;
-        print(playerTransform.position);
-        print(gameObject.transform.position);
+        
 	}
 }

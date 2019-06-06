@@ -391,13 +391,13 @@
     <Compile Include="Assets\Scripts\EquipShades.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\HammerTime.cs" />
-    <Compile Include="Assets\Scripts\InitializeSteamVr.cs" />
     <Compile Include="Assets\Scripts\InputFieldTrigger.cs" />
     <Compile Include="Assets\Scripts\MathPuzzle.cs" />
     <Compile Include="Assets\Scripts\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\OpenTips.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Shaking.cs" />
+    <Compile Include="Assets\Scripts\SilentButDeadly.cs" />
     <Compile Include="Assets\Scripts\Trigger1.cs" />
     <Compile Include="Assets\Scripts\Trigger2.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />

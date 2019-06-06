@@ -8,12 +8,14 @@ public class ColorBlindHandler : MonoBehaviour {
 
     [SerializeField]
     private Colorblind ColorBlindScript;
-    //[SerializeField]
+
+    //public delegate void OnShadesChanged();
+    //public static event OnShadesChanged handleChange;
     
 
     void Awake()
-    {      
-
+    {
+        
     }
 
     void Start()
@@ -30,7 +32,7 @@ public class ColorBlindHandler : MonoBehaviour {
         //print(ColorBlindScript);
         
     }
-   
+
 
     public void ChangeSpectrum(int shadeIndex)
     {

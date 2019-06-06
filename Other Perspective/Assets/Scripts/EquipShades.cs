@@ -6,13 +6,14 @@ public class EquipShades : MonoBehaviour {
     
     private ColorBlindHandler Handler;
     [SerializeField]
-    private readonly int ShaderIndex;
+    private int ShaderIndex;
 
 
 
     // Use this for initialization
     void Start () {
-        Handler = GameObject.Find("GameManager").GetComponent<ColorBlindHandler>();
+        Handler = GameObject.Find("Sunglasses").GetComponent<ColorBlindHandler>();
+        
 	}
 	
 	// Update is called once per frame
@@ -22,21 +23,17 @@ public class EquipShades : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Face")
+        if(other.gameObject.name == "VRCamera")
         {
-            GameObject.Find("GameManager").GetComponent<OVRScreenFade>().FadeOut();
+            
             Handler.ChangeSpectrum(ShaderIndex);
+            //f
             gameObject.SetActive(true);
             
         }
         
     }
 
-    IEnumerator FadeToNextShader()
-    {
-
-        yield return null;
-    }
-
+   
 
 }
