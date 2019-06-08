@@ -397,6 +397,7 @@
     <Compile Include="Assets\Scripts\OpenTips.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Shaking.cs" />
+    <Compile Include="Assets\Scripts\Shaking2.cs" />
     <Compile Include="Assets\Scripts\SilentButDeadly.cs" />
     <Compile Include="Assets\Scripts\Trigger1.cs" />
     <Compile Include="Assets\Scripts\Trigger2.cs" />
