@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using Wilberforce;
 
 public class MathPuzzle : MonoBehaviour {
 
@@ -11,36 +13,40 @@ public class MathPuzzle : MonoBehaviour {
     public int Answer;
     public InputField RiddleAnswer;
     public Button BtnCheckAnswer;
-    public GameObject pivotPoint;
+    private Colorblind ColorBlindScript;
 
    
 
     private void Awake()
     {
+        ColorBlindScript = GetComponent<Colorblind>();
         //if more puzzles instantiate 
         _NumberOfTries = 0;
         _RightAnswer = 125;
     }
     // Use this for initialization
     void Start () {
+
+        //var colorblindScript = ColorBlindScript as Colorblind;
         
+
     }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        HandleButtonPress();
+        //HandleButtonPress();
 	}
 
     void HandleButtonPress()
     {
-        BtnCheckAnswer.GetComponent<Button>().onClick.AddListener(HandleAnswer);        
+        //BtnCheckAnswer.GetComponent<Button>().onClick.AddListener(HandleAnswer);        
     }
 
     void HandleAnswer()
     {
-        
+        //setinput should be run click on something, only run here for testing
         SetInput();
-        if (!CheckAnswer())
+        if (Answer != _RightAnswer)
         {
             print("not so much succes");
             NumberOfTries();
@@ -54,23 +60,13 @@ public class MathPuzzle : MonoBehaviour {
         Answer = Int32.Parse(RiddleAnswer.text);
     }
 
-    bool CheckAnswer()
-    {
-        if(Answer == _RightAnswer)
-        {
-            return true;
-        }
-        else            
-        NumberOfTries();
-        return false;
-
-    }   
+   
 
     void NumberOfTries()
     {
     if(_NumberOfTries == 2)
         {
-            ChangePuzzle();
+            
             Debug.Log("NOW LOOK AT WHAT YOU HAVE DONE!");
             //perhaps play audio 
             _NumberOfTries = 0;
@@ -79,10 +75,6 @@ public class MathPuzzle : MonoBehaviour {
             _NumberOfTries++;
     }
 
-    void ChangePuzzle()
-    {
-
-        pivotPoint.transform.Rotate(90f, 0, 0);
-    }
+    
 
 }

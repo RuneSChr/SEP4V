@@ -148,7 +148,6 @@ namespace Wilberforce
 		{
 			// bind the connected script to local variable
 			var colorblindScript = target as Colorblind;
-
             // bind the 'Type' parameter of the Colorblind script to dropdown in GUI
             colorblindScript.Type = EditorGUILayout.IntPopup(typeLabelContent, colorblindScript.Type, typeTexts, typeInts);
 
