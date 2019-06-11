@@ -24,6 +24,7 @@ public class Chackpoint : MonoBehaviour {
     public void DisableCkeckpoint()
     {
         countCheckpoints = 0;
-        nextCheckpoint.SetActive(false);
+        if(nextCheckpoint != null) nextCheckpoint.SetActive(false);
+        
     }
 }
