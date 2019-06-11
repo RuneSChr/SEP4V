@@ -549,25 +549,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aa6594b9ab41f846a85c19c65a2c401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seagulsSource: {fileID: 1611165569}
-  shipsSource: {fileID: 1165994087}
-  otherSource: {fileID: 1263426125}
-  sounds:
-  - {fileID: 8300000, guid: e195e0c720a9b224881ec826e8a1d047, type: 3}
-  - {fileID: 8300000, guid: 05a58ffb13c5cee43b3f0c893e975bf1, type: 3}
-  - {fileID: 8300000, guid: ee391227498c22649af20466e5f249a7, type: 3}
-  - {fileID: 8300000, guid: aea205863f84f8c4d9b75830fbe56ec6, type: 3}
-  - {fileID: 8300000, guid: af158c994e4cd9b44b4d6a01837f2255, type: 3}
-  - {fileID: 8300000, guid: 9f0e131dd6bced943a4ad4922a9b3f4f, type: 3}
-  - {fileID: 8300000, guid: 85ce96946e6d74e419a6ec50458491c1, type: 3}
-  - {fileID: 8300000, guid: af86f3ff915c90f4392657b201472456, type: 3}
-  - {fileID: 8300000, guid: 045ef46357383a4469a393c64e1e029f, type: 3}
-  - {fileID: 8300000, guid: 045ef46357383a4469a393c64e1e029f, type: 3}
-  - {fileID: 8300000, guid: 3e53fd01d3784f148b28990e7ace4a90, type: 3}
-  - {fileID: 8300000, guid: 8ee509dde2c3d2749b8a5c3f323cd9fe, type: 3}
-  - {fileID: 8300000, guid: f1713edff53ff494d9e0e5162e7803f2, type: 3}
-  - {fileID: 8300000, guid: 59a66cf5acba91f46841a8aeb4dd93bc, type: 3}
-  - {fileID: 8300000, guid: 753b20c8e155586478e332945a39aa39, type: 3}
+  seagulsSource: {fileID: 0}
+  shipsSource: {fileID: 0}
+  otherSource: {fileID: 0}
+  sounds: []
 --- !u!1 &122679737
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,12 +603,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86ab2e727cd09f43849955c5b35f490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireParticlePrefab: {fileID: 105996, guid: 9471d2206e57ca246a4bf982f3c29c8f, type: 2}
+  fireParticlePrefab: {fileID: 0}
   startActive: 0
-  customParticles: {fileID: 2042345019}
+  customParticles: {fileID: 0}
   isBurning: 0
-  burnTime: 10
-  ignitionDelay: 1
+  burnTime: 0
+  ignitionDelay: 0
   ignitionSound: {fileID: 0}
   canSpreadFromThisSource: 1
 --- !u!114 &122679740
@@ -1408,6 +1393,11 @@ Transform:
   m_Father: {fileID: 1067985027}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &296142355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4619305962546340, guid: 7ec1d13b27ea78142a1e05686961e57f,
+    type: 2}
+  m_PrefabInternal: {fileID: 637266992}
 --- !u!1 &342369358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,7 +2196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1977b652fda034a911a772088197dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 0
 --- !u!114 &506701468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2476,11 +2466,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b33c903b770cd1439f46cc692100e77, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &564867653 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1975407166963950, guid: 6c57c7fa93271a345b00286e589632e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1481420268}
 --- !u!1 &589580016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,6 +2841,100 @@ Prefab:
       propertyPath: Type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114633955243319540, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: inputSource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633955243319540, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: origin
+      value: 
+      objectReference: {fileID: 296142355}
+    - target: {fileID: 114382145616052146, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: handType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382145616052146, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: hoverSphereTransform
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382145616052146, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: hoverSphereRadius
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382145616052146, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: controllerHoverRadius
+      value: 0.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382145616052146, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: fingerJointHoverRadius
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382145616052146, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: objectAttachmentPoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382145616052146, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: renderModelPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382145616052146, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: otherHand
+      value: 
+      objectReference: {fileID: 759056919}
+    - target: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: handType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: hoverSphereTransform
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: hoverSphereRadius
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: controllerHoverRadius
+      value: 0.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: fingerJointHoverRadius
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: objectAttachmentPoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: renderModelPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
+        type: 2}
+      propertyPath: otherHand
+      value: 
+      objectReference: {fileID: 2137804633}
+    - target: {fileID: 1840611887800142, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
   m_IsPrefabAsset: 0
@@ -2900,8 +2979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1808627138f1244b0a9c793cf010e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 649136392}
-  RotationSpeed: 3
+  light: {fileID: 0}
+  RotationSpeed: 0
 --- !u!108 &649136395
 Light:
   m_ObjectHideFlags: 0
@@ -3376,6 +3455,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &754526838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114004458749753474, guid: 7ec1d13b27ea78142a1e05686961e57f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1175373153}
+  m_Script: {fileID: 11500000, guid: 5ae42c8f78c60684aab6be6c18bd7a9b, type: 3}
 --- !u!114 &759056919 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114412073453879180, guid: 7ec1d13b27ea78142a1e05686961e57f,
@@ -3448,7 +3533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df32011574fddbc4d9e2727a96f70e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  msg: Emitter
+  msg: 
 --- !u!114 &787562921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3461,10 +3546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b45ebbf86be4df6b0e6cd933812af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  render: 0
-  shader: {fileID: 4800000, guid: 801733041f66b49e1b3c2101471db877, type: 3}
-  particleColor: {r: 1, g: 0.9960765, b: 1, a: 1}
-  radiusScale: 2
+  render: 1
+  shader: {fileID: 0}
+  particleColor: {r: 1, g: 1, b: 1, a: 1}
+  radiusScale: 1
 --- !u!114 &787562922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3479,21 +3564,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 0.9654912, b: 0, a: 1}
-    key1: {r: 1, g: 0.80961907, b: 0.007843137, a: 1}
-    key2: {r: 1, g: 0.54693955, b: 0.37254906, a: 0}
-    key3: {r: 1, g: 0, b: 0.8296585, a: 0}
-    key4: {r: 0.61980397, g: 0.10012458, b: 0.8490566, a: 0}
-    key5: {r: 0, g: 0.59607965, b: 0.8584906, a: 0}
-    key6: {r: 0, g: 0.5862069, b: 1, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 19661
-    ctime2: 26214
-    ctime3: 32768
-    ctime4: 39321
-    ctime5: 45875
-    ctime6: 65535
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
     ctime7: 0
     atime0: 0
     atime1: 65535
@@ -3504,7 +3589,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 7
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
 --- !u!114 &787562923
 MonoBehaviour:
@@ -5831,7 +5916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f67bb3fd006c24e8f0c6189a5e5d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCheckpoint: {fileID: 1702351440}
+  nextCheckpoint: {fileID: 0}
 --- !u!1 &872864992
 GameObject:
   m_ObjectHideFlags: 0
@@ -5872,6 +5957,7 @@ GameObject:
   - component: {fileID: 882129836}
   - component: {fileID: 882129835}
   - component: {fileID: 882129834}
+  - component: {fileID: 882129837}
   m_Layer: 0
   m_Name: GlassesTable
   m_TagString: Untagged
@@ -5953,6 +6039,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 882129832}
   m_Mesh: {fileID: 4300002, guid: 1ee2328736527460b965c63e3bf6c1d8, type: 3}
+--- !u!114 &882129837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882129832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4d8291ddc21e94da84d24c4cbd5e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColorBlindScript: {fileID: 754526838}
 --- !u!1 &898129446
 GameObject:
   m_ObjectHideFlags: 0
@@ -6239,12 +6337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c1c9a5bbab2e54280027c0ecaf42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveFiles:
-  - {fileID: 8300000, guid: ddcfb4cc21e043948b5a84afe22d90f0, type: 3}
-  volMin: 1
-  volMax: 1
-  pitchMin: 0.95
-  pitchMax: 1.05
+  waveFiles: []
+  volMin: 0
+  volMax: 0
+  pitchMin: 0
+  pitchMax: 0
   playOnAwake: 0
 --- !u!1001 &902110378
 Prefab:
@@ -7016,12 +7113,6 @@ Transform:
   m_Father: {fileID: 955566398}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1084471019 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114004458749753474, guid: 7ec1d13b27ea78142a1e05686961e57f,
-    type: 2}
-  m_PrefabInternal: {fileID: 637266992}
-  m_Script: {fileID: 11500000, guid: 5ae42c8f78c60684aab6be6c18bd7a9b, type: 3}
 --- !u!1 &1097155510
 GameObject:
   m_ObjectHideFlags: 0
@@ -11808,7 +11899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df32011574fddbc4d9e2727a96f70e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  msg: Emitter
+  msg: 
 --- !u!114 &1129363895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11821,10 +11912,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b45ebbf86be4df6b0e6cd933812af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  render: 0
-  shader: {fileID: 4800000, guid: 801733041f66b49e1b3c2101471db877, type: 3}
-  particleColor: {r: 1, g: 0.9960765, b: 1, a: 1}
-  radiusScale: 2
+  render: 1
+  shader: {fileID: 0}
+  particleColor: {r: 1, g: 1, b: 1, a: 1}
+  radiusScale: 1
 --- !u!114 &1129363896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11839,21 +11930,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 0.9654912, b: 0, a: 1}
-    key1: {r: 1, g: 0.80961907, b: 0.007843137, a: 1}
-    key2: {r: 1, g: 0.54693955, b: 0.37254906, a: 0}
-    key3: {r: 1, g: 0, b: 0.8296585, a: 0}
-    key4: {r: 0.61980397, g: 0.10012458, b: 0.8490566, a: 0}
-    key5: {r: 0, g: 0.59607965, b: 0.8584906, a: 0}
-    key6: {r: 0, g: 0.5862069, b: 1, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 19661
-    ctime2: 26214
-    ctime3: 32768
-    ctime4: 39321
-    ctime5: 45875
-    ctime6: 65535
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
     ctime7: 0
     atime0: 0
     atime1: 65535
@@ -11864,7 +11955,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 7
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
 --- !u!114 &1129363897
 MonoBehaviour:
@@ -14213,6 +14304,52 @@ Transform:
   m_Father: {fileID: 121006172}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1175373153
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4765325749256042, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765325749256042, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.613
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765325749256042, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 21.213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765325749256042, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765325749256042, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765325749256042, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765325749256042, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765325749256042, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840611887800142, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+      propertyPath: m_Name
+      value: Player (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ec1d13b27ea78142a1e05686961e57f, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &1176946335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 15d1ea1de3beefb47b758c066a85f82a,
@@ -14395,14 +14532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c1c9a5bbab2e54280027c0ecaf42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveFiles:
-  - {fileID: 8300000, guid: 23003f298f14cc24d9ff3988966f6292, type: 3}
-  - {fileID: 8300000, guid: 7916cbf0a83b8494f960b9e88aa45a90, type: 3}
-  - {fileID: 8300000, guid: dbf37170840828344ae352756e49a99a, type: 3}
-  volMin: 1
-  volMax: 1
-  pitchMin: 0.95
-  pitchMax: 1.05
+  waveFiles: []
+  volMin: 0
+  volMax: 0
+  pitchMin: 0
+  pitchMax: 0
   playOnAwake: 0
 --- !u!1 &1193935962
 GameObject:
@@ -14756,7 +14890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df32011574fddbc4d9e2727a96f70e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  msg: Emitter(1)
+  msg: 
 --- !u!114 &1216267964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14771,21 +14905,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 0.9654912, b: 0, a: 1}
-    key1: {r: 1, g: 0.80961907, b: 0.007843137, a: 1}
-    key2: {r: 1, g: 0.54693955, b: 0.37254906, a: 0}
-    key3: {r: 1, g: 0, b: 0.8296585, a: 0}
-    key4: {r: 0.61980397, g: 0.10012458, b: 0.8490566, a: 0}
-    key5: {r: 0, g: 0.59607965, b: 0.8584906, a: 0}
-    key6: {r: 0, g: 0.5862069, b: 1, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 19661
-    ctime2: 26214
-    ctime3: 32768
-    ctime4: 39321
-    ctime5: 45875
-    ctime6: 65535
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
     ctime7: 0
     atime0: 0
     atime1: 65535
@@ -14796,7 +14930,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 7
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
 --- !u!114 &1216267965
 MonoBehaviour:
@@ -16945,10 +17079,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b45ebbf86be4df6b0e6cd933812af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  render: 0
-  shader: {fileID: 4800000, guid: 801733041f66b49e1b3c2101471db877, type: 3}
-  particleColor: {r: 1, g: 0.9960765, b: 1, a: 1}
-  radiusScale: 2
+  render: 1
+  shader: {fileID: 0}
+  particleColor: {r: 1, g: 1, b: 1, a: 1}
+  radiusScale: 1
 --- !u!1 &1220008401
 GameObject:
   m_ObjectHideFlags: 0
@@ -16996,18 +17130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onTakeDamage:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1762244826}
-        m_MethodName: SpawnBalloonFromEvent
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 14
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onceOnly: 0
@@ -17507,7 +17630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1977b652fda034a911a772088197dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 0
 --- !u!114 &1282957981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17695,7 +17818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df32011574fddbc4d9e2727a96f70e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  msg: Emitter
+  msg: 
 --- !u!114 &1320261360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17708,10 +17831,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b45ebbf86be4df6b0e6cd933812af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  render: 0
-  shader: {fileID: 4800000, guid: 801733041f66b49e1b3c2101471db877, type: 3}
-  particleColor: {r: 1, g: 0.9960765, b: 1, a: 1}
-  radiusScale: 2
+  render: 1
+  shader: {fileID: 0}
+  particleColor: {r: 1, g: 1, b: 1, a: 1}
+  radiusScale: 1
 --- !u!114 &1320261361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17726,21 +17849,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 0.9654912, b: 0, a: 1}
-    key1: {r: 1, g: 0.80961907, b: 0.007843137, a: 1}
-    key2: {r: 1, g: 0.54693955, b: 0.37254906, a: 0}
-    key3: {r: 1, g: 0, b: 0.8296585, a: 0}
-    key4: {r: 0.61980397, g: 0.10012458, b: 0.8490566, a: 0}
-    key5: {r: 0, g: 0.59607965, b: 0.8584906, a: 0}
-    key6: {r: 0, g: 0.5862069, b: 1, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 19661
-    ctime2: 26214
-    ctime3: 32768
-    ctime4: 39321
-    ctime5: 45875
-    ctime6: 65535
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
     ctime7: 0
     atime0: 0
     atime1: 65535
@@ -17751,7 +17874,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 7
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
 --- !u!114 &1320261362
 MonoBehaviour:
@@ -23851,7 +23974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1977b652fda034a911a772088197dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 0
 --- !u!114 &1503259448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24193,12 +24316,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e53a985809f0949b9a42cc2a6888c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPackage: {fileID: 11450054, guid: 98a3ad29136d5c04f8a025adf1cbd704, type: 2}
-  requireGrabActionToTake: 1
+  _itemPackage: {fileID: 0}
+  requireGrabActionToTake: 0
   requireReleaseActionToReturn: 0
-  showTriggerHint: 1
-  attachmentFlags: -23
-  takeBackItem: 1
+  showTriggerHint: 0
+  attachmentFlags: 47
+  takeBackItem: 0
   acceptDifferentItems: 0
   pickupEvent:
     m_PersistentCalls:
@@ -24242,8 +24365,8 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
@@ -24251,8 +24374,8 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -25046,7 +25169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4d8291ddc21e94da84d24c4cbd5e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColorBlindScript: {fileID: 1084471019}
+  ColorBlindScript: {fileID: 0}
 --- !u!1 &1645004686
 GameObject:
   m_ObjectHideFlags: 0
@@ -25373,7 +25496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f67bb3fd006c24e8f0c6189a5e5d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextCheckpoint: {fileID: 789485243}
+  nextCheckpoint: {fileID: 0}
 --- !u!136 &1702351443
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25530,16 +25653,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnTime: 5
   maxSpawnTime: 15
-  balloonPrefab: {fileID: 170850, guid: 8e13c6e5a21aeea4db3c25ef0e529308, type: 2}
-  autoSpawn: 0
+  balloonPrefab: {fileID: 0}
+  autoSpawn: 1
   spawnAtStartup: 1
   playSounds: 1
-  inflateSound: {fileID: 899244663}
-  stretchSound: {fileID: 1182778156}
+  inflateSound: {fileID: 0}
+  stretchSound: {fileID: 0}
   sendSpawnMessageToParent: 0
-  scale: 1.5
+  scale: 1
   spawnDirectionTransform: {fileID: 0}
-  spawnForce: 50
+  spawnForce: 0
   attachBalloon: 0
   color: 14
 --- !u!1 &1770895718
@@ -25778,7 +25901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df32011574fddbc4d9e2727a96f70e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  msg: Emitter(1)
+  msg: 
 --- !u!114 &1854143586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25793,21 +25916,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 0.9654912, b: 0, a: 1}
-    key1: {r: 1, g: 0.80961907, b: 0.007843137, a: 1}
-    key2: {r: 1, g: 0.54693955, b: 0.37254906, a: 0}
-    key3: {r: 1, g: 0, b: 0.8296585, a: 0}
-    key4: {r: 0.61980397, g: 0.10012458, b: 0.8490566, a: 0}
-    key5: {r: 0, g: 0.59607965, b: 0.8584906, a: 0}
-    key6: {r: 0, g: 0.5862069, b: 1, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 19661
-    ctime2: 26214
-    ctime3: 32768
-    ctime4: 39321
-    ctime5: 45875
-    ctime6: 65535
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
     ctime7: 0
     atime0: 0
     atime1: 65535
@@ -25818,7 +25941,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 7
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
 --- !u!114 &1854143587
 MonoBehaviour:
@@ -27967,10 +28090,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b45ebbf86be4df6b0e6cd933812af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  render: 0
-  shader: {fileID: 4800000, guid: 801733041f66b49e1b3c2101471db877, type: 3}
-  particleColor: {r: 1, g: 0.9960765, b: 1, a: 1}
-  radiusScale: 2
+  render: 1
+  shader: {fileID: 0}
+  particleColor: {r: 1, g: 1, b: 1, a: 1}
+  radiusScale: 1
 --- !u!1 &1862773942
 GameObject:
   m_ObjectHideFlags: 0
@@ -28093,7 +28216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1977b652fda034a911a772088197dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 0
 --- !u!114 &1862773947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28252,7 +28375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalPosition: {fileID: 0}
-  key: {fileID: 564867653}
+  key: {fileID: 0}
 --- !u!1 &1934710640
 GameObject:
   m_ObjectHideFlags: 0
@@ -33632,7 +33755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1977b652fda034a911a772088197dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 0
 --- !u!114 &2141526293
 MonoBehaviour:
   m_ObjectHideFlags: 0

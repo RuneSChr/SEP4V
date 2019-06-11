@@ -12,7 +12,7 @@ public class EquipShades : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Handler = GameObject.Find("Colorblind").GetComponent<ColorBlindHandler>();
+        Handler = GameObject.Find("GlassesTable").GetComponent<ColorBlindHandler>();
         
         
 	}
