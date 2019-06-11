@@ -32,9 +32,9 @@ public class Shaking2 : MonoBehaviour
         //ReturnRandomRange(randomY, -0.03f, 0.03f);
         //ReturnRandomRange(randomZ, -0.03f, 0.03f);
 
-        randomZ = Random.Range(-0.03f, 0.03f);
-        randomX = Random.Range(-0.03f, 0.03f);
-        randomZ = Random.Range(-0.03f, 0.03f);
+        randomZ = Random.Range(-0.05f, 0.05f);
+        randomX = Random.Range(-0.05f, 0.05f);
+        randomY = Random.Range(-0.05f, 0.05f);
 
 
 
@@ -90,11 +90,8 @@ public class Shaking2 : MonoBehaviour
         Vector3 originalPosition;
         Vector3 newPosition =  new Vector3(randomX, randomY, randomZ);
 
-        print(newPosition + " " + chosentHand);
         
-        print(randomX);
-        print(randomZ);
-        print(randomY);
+        
 
         if (chosentHand != null)
         {

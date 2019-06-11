@@ -5,6 +5,7 @@ using UnityEngine;
 public class ResetSphere : MonoBehaviour {
 
     private Renderer rend;
+    private bool startedRight = false;
     private void Start()
     {
         rend = GetComponent<Renderer>();

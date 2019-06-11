@@ -15,6 +15,10 @@ TagManager:
   - Tritanopia
   - Protanopia
   - Deuteranopia
+  - TP1
+  - TP2
+  - TP3
+  - TP4
   layers:
   - Default
   - TransparentFX
@@ -25,8 +29,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Key
+  - KeyBox
   - 
   - 
   - 

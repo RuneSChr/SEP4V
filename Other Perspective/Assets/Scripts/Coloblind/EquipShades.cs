@@ -13,7 +13,7 @@ public class EquipShades : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Handler = GameObject.Find("Colorblind").GetComponent<ColorBlindHandler>();
-        print(Handler);
+        
         
 	}
 	
@@ -24,14 +24,12 @@ public class EquipShades : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Inside trigger");
+       
         if(other.gameObject.name == "VRCamera")
         {
-            print("hey");
+         
             Handler.ChangeSpectrum(ShaderIndex);
-            //f
-            //gameObject.SetActive(false);
-            
+          
         }
         
     }

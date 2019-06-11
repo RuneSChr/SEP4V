@@ -17,7 +17,7 @@ public class KeyManager : MonoBehaviour {
         rBehaviourHand = rHand.GetComponent<SteamVR_Behaviour_Pose>();
 		KeyCollide.collided += Drop;
 	}
-	private void Drop(){
+    private void Drop(){
         if(rHand.AttachedObjects.Count > 0) {
             rHand.DetachObject(gameObject);
             vibration.Execute(0, 0.5f, 160, 0.5f, rBehaviourHand.inputSource);
@@ -27,5 +27,5 @@ public class KeyManager : MonoBehaviour {
             vibration.Execute(0, 0.5f, 160, 0.5f, lBehaviourHand.inputSource);
         }
 	}
-	
+
 }
