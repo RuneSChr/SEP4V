@@ -12,6 +12,9 @@ TagManager:
   - Glass
   - Lefty
   - Righty
+  - Tritanopia
+  - Protanopia
+  - Deuteranopia
   layers:
   - Default
   - TransparentFX
