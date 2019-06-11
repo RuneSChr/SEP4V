@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.sep.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\student\\Desktop\\SEP4V-Colorblindnes-with-gitIgnore (2)\\SEP4V-Colorblindnes-with-gitIgnore\\Other Perspective\\actions.json",
+      "action_manifest_path": "C:\\Users\\student\\Desktop\\SEP4V\\Other Perspective\\actions.json",
       "strings": {
         "en_us": {
           "name": "SEP [Testing]"
