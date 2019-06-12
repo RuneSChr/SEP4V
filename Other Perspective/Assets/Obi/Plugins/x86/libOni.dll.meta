@@ -1,85 +1,79 @@
 fileFormatVersion: 2
-guid: eea36f3aaad6bc04e9b0cdcefcd3654e
+guid: eb02e369b26e142719b77dde09868e40
+timeCreated: 1453064763
+licenseType: Store
 PluginImporter:
-  externalObjects: {}
-  serializedVersion: 2
+  serializedVersion: 1
   iconMap: {}
   executionOrder: {}
   isPreloaded: 0
   isOverridable: 0
   platformData:
-  - first:
-      '': OSXIntel
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      '': OSXIntel64
-    second:
+    Android:
       enabled: 0
       settings:
-        CPU: None
-  - first:
-      Any: 
-    second:
-      enabled: 1
-      settings: {}
-  - first:
-      Editor: Editor
-    second:
+        CPU: ARMv7
+    Any:
       enabled: 0
+      settings:
+        Exclude Android: 1
+        Exclude Editor: 0
+        Exclude Linux: 0
+        Exclude Linux64: 1
+        Exclude LinuxUniversal: 1
+        Exclude OSXIntel: 0
+        Exclude OSXIntel64: 1
+        Exclude OSXUniversal: 1
+        Exclude WebGL: 0
+        Exclude Win: 0
+        Exclude Win64: 1
+        Exclude iOS: 1
+    Editor:
+      enabled: 1
       settings:
         CPU: x86
         DefaultValueInitialized: true
-  - first:
-      Facebook: Win
-    second:
+        OS: Windows
+    Linux:
+      enabled: 1
+      settings:
+        CPU: x86
+    Linux64:
+      enabled: 0
+      settings:
+        CPU: None
+    LinuxUniversal:
+      enabled: 0
+      settings:
+        CPU: x86
+    OSXIntel:
       enabled: 1
       settings:
         CPU: AnyCPU
-  - first:
-      Facebook: Win64
-    second:
+    OSXIntel64:
       enabled: 0
       settings:
         CPU: None
-  - first:
-      Standalone: Linux
-    second:
-      enabled: 1
-      settings:
-        CPU: x86
-  - first:
-      Standalone: Linux64
-    second:
-      enabled: 0
-      settings:
-        CPU: None
-  - first:
-      Standalone: LinuxUniversal
-    second:
-      enabled: 1
-      settings:
-        CPU: x86
-  - first:
-      Standalone: OSXUniversal
-    second:
+    OSXUniversal:
       enabled: 0
       settings:
         CPU: x86
-  - first:
-      Standalone: Win
-    second:
+    WebGL:
+      enabled: 1
+      settings: {}
+    Win:
       enabled: 1
       settings:
         CPU: AnyCPU
-  - first:
-      Standalone: Win64
-    second:
+    Win64:
       enabled: 0
       settings:
         CPU: None
+    iOS:
+      enabled: 0
+      settings:
+        CompileFlags: 
+        FrameworkDependencies: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 

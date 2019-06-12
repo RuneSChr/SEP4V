@@ -35,14 +35,14 @@ public class DoneTest : MonoBehaviour
             return;
         }
 
-        if (Math.Abs(color.r - 1f) < 0.005 && Math.Abs(color.g - 0f) < 0.005 && Math.Abs(color.b - 0.830f) < 0.005)
+        if (Math.Abs(color.r - 1f) < 0.009 && Math.Abs(color.g - 0f) < 0.009 && Math.Abs(color.b - 0.830f) < 0.009)
         {
             done = true;
         }
         else if (color != emitter.colors[150])
         {
             color = emitter.colors[150];
-
+            //Debug.Log(msg + ": " + color.ToString());
         }
     }
 }

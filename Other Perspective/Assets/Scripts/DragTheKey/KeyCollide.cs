@@ -34,7 +34,6 @@ public class KeyCollide : MonoBehaviour {
     {
         if (firstCollide)
         {
-            Debug.Log("other: " + other.gameObject.name + ", ganeobject: " + gameObject.name);
             firstCollide = false;
             rend.material.SetColor("_Color", Color.red);
             collided();

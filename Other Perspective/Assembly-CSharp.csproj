@@ -427,6 +427,8 @@
     <Compile Include="Assets\Scripts\DragTheKey\KeyManager.cs" />
     <Compile Include="Assets\Scripts\DragTheKey\ResetKey.cs" />
     <Compile Include="Assets\Scripts\DragTheKey\ResetSphere.cs" />
+    <Compile Include="Assets\Scripts\Events\IntroductionEvent.cs" />
+    <Compile Include="Assets\Scripts\Events\StartRoomEvent.cs" />
     <Compile Include="Assets\Scripts\FLuid\DoneTest.cs" />
     <Compile Include="Assets\Scripts\FLuid\HandVelocityMove.cs" />
     <Compile Include="Assets\Scripts\FLuid\VelocityMove.cs" />
@@ -801,10 +803,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Obi.csproj">
-      <Project>{C3280CE5-EB23-6321-E1CC-4646E8ADE364}</Project>
-      <Name>Obi</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
       <Project>{FCED2927-32F2-E7D8-B07E-DC143678E0AD}</Project>
       <Name>Oculus.VR.Editor</Name>
@@ -836,6 +834,10 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{6826E70C-1F1F-FCAB-6AD7-7C4D1ED705C5}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="Obi.csproj">
+      <Project>{C3280CE5-EB23-6321-E1CC-4646E8ADE364}</Project>
+      <Name>Obi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
