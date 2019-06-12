@@ -430,6 +430,7 @@
     <Compile Include="Assets\Scripts\FLuid\DoneTest.cs" />
     <Compile Include="Assets\Scripts\FLuid\HandVelocityMove.cs" />
     <Compile Include="Assets\Scripts\FLuid\VelocityMove.cs" />
+    <Compile Include="Assets\Scripts\GameStateManager.cs" />
     <Compile Include="Assets\Scripts\InputFieldTrigger.cs" />
     <Compile Include="Assets\Scripts\LighthouseLightRotator.cs" />
     <Compile Include="Assets\Scripts\MathPuzzle.cs" />

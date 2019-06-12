@@ -9,6 +9,7 @@ public class KeyCollide : MonoBehaviour {
     public static Collided collided;
     public static bool firstCollide;
     private Renderer rend;
+
     private void Start()
     {
         firstCollide = true;
@@ -33,6 +34,7 @@ public class KeyCollide : MonoBehaviour {
     {
         if (firstCollide)
         {
+            Debug.Log("other: " + other.gameObject.name + ", ganeobject: " + gameObject.name);
             firstCollide = false;
             rend.material.SetColor("_Color", Color.red);
             collided();

@@ -32,9 +32,9 @@ public class Shaking2 : MonoBehaviour
         //ReturnRandomRange(randomY, -0.03f, 0.03f);
         //ReturnRandomRange(randomZ, -0.03f, 0.03f);
 
-        randomZ = Random.Range(-0.05f, 0.05f);
-        randomX = Random.Range(-0.05f, 0.05f);
-        randomY = Random.Range(-0.05f, 0.05f);
+        randomZ = Random.Range(-0.07f, 0.07f);
+        randomX = Random.Range(-0.07f, 0.07f);
+        randomY = Random.Range(-0.07f, 0.07f);
 
 
 
@@ -100,7 +100,7 @@ public class Shaking2 : MonoBehaviour
             {
                 originalPosition = leftParent.transform.localPosition;
                 leftParent.transform.localPosition = newPosition;
-                 new WaitForSeconds(0.2f);
+                 new WaitForSeconds(0.3f);
                 leftParent.transform.localPosition = originalPosition;
                
             }
@@ -108,7 +108,7 @@ public class Shaking2 : MonoBehaviour
             {
                 originalPosition = rightParent.transform.localPosition;
                 rightParent.transform.localPosition = newPosition;
-                new WaitForSeconds(0.2f);
+                new WaitForSeconds(0.3f);
                 rightParent.transform.localPosition = originalPosition;
             }
 
